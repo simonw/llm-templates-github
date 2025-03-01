@@ -5,7 +5,10 @@
 [![Tests](https://github.com/simonw/llm-templates-github/actions/workflows/test.yml/badge.svg)](https://github.com/simonw/llm-templates-github/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/llm-templates-github/blob/main/LICENSE)
 
-Laod LLM templates from GitHub repositories
+Load LLM templates from GitHub repositories
+
+> [!WARNING]
+> Experimental alpha! See [llm/issues/809](https://github.com/simonw/llm/issues/809) for details. This depends on an alpha version of LLM.
 
 > [!WARNING]  
 > This is a **very early experment**. Installing this plugin depends on an experimental branch of LLM.
@@ -18,8 +21,16 @@ llm install llm-templates-github
 ```
 ## Usage
 
-Usage instructions go here.
+To use the template from `templatename.yaml` in the `https://github.com/username/llm-templates` repo:
 
+```bash
+llm -t gh:username/templatename
+```
+
+e.g. to try [this summarize.yaml](https://github.com/simonw/llm-templates/blob/main/summarize.yaml) template:
+```bash
+curl -L https://llm.datasette.io/ | llm -t gh:simonw/summarize
+```
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:
