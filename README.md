@@ -7,11 +7,8 @@
 
 Load LLM templates from GitHub repositories
 
-> [!WARNING]
-> Experimental alpha! See [llm/issues/809](https://github.com/simonw/llm/issues/809) for details. This depends on an alpha version of LLM.
-
 > [!WARNING]  
-> This is a **very early experment**. Installing this plugin depends on an experimental branch of LLM.
+> This is a **very early experment** - see [llm/issues/809](https://github.com/simonw/llm/issues/809) for details. Installing this plugin depends on an experimental branch of LLM.
 
 ## Installation
 
