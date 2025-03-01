@@ -1,0 +1,30 @@
+[project]
+name = "llm-templates-github"
+version = "0.1"
+description = "Laod LLM templates from GitHub repositories"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "llm @ git+https://github.com/simonw/llm.git@template-loaders"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-templates-github"
+Changelog = "https://github.com/simonw/llm-templates-github/releases"
+Issues = "https://github.com/simonw/llm-templates-github/issues"
+CI = "https://github.com/simonw/llm-templates-github/actions"
+
+[project.entry-points.llm]
+templates_github = "llm_templates_github"
+
+[project.optional-dependencies]
+test = ["pytest"]
