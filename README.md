@@ -7,9 +7,6 @@
 
 Load LLM templates from GitHub repositories
 
-> [!WARNING]  
-> This is a **very early experment** - see [llm/issues/809](https://github.com/simonw/llm/issues/809) for details. Installing this plugin depends on an experimental branch of LLM.
-
 ## Installation
 
 Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
