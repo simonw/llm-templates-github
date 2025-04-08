@@ -1,7 +1,7 @@
 [project]
 name = "llm-templates-github"
 version = "0.1"
-description = "Laod LLM templates from GitHub repositories"
+description = "Load LLM templates from GitHub repositories"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
 license = {text = "Apache-2.0"}
