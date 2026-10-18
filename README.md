@@ -15,6 +15,8 @@ llm install llm-templates-github
 ```
 ## Usage
 
+Templates are loaded from the repository's default branch.
+
 To use the template from `templatename.yaml` in the `https://github.com/username/llm-templates` repo:
 
 ```bash

@@ -25,9 +25,9 @@ def github_template_loader(template_path: str) -> Template:
 
     username, repo, template_name = parts
 
-    # Fetch template directly from GitHub
+    # HEAD follows the repository default branch, which need not be main.
     path = f"{template_name}.yaml"
-    url = f"https://raw.githubusercontent.com/{username}/{repo}/main/{path}"
+    url = f"https://raw.githubusercontent.com/{username}/{repo}/HEAD/{path}"
 
     try:
         response = httpx.get(url)
