@@ -10,7 +10,8 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 dependencies = [
-    "llm>=0.24"
+    "llm>=0.24",
+    "httpx"
 ]
 
 [build-system]
